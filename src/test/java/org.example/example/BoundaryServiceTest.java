@@ -32,7 +32,7 @@ public class BoundaryServiceTest {
         Throwable thrown = assertThrows(ArrayIndexOutOfBoundsException.class, () -> {
             boundaryService.findMin(emptyArr);
         });
-        assertNull(thrown.getMessage());
+        assertNotNull(thrown.getMessage());
     }
 }
 
